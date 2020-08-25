@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="shortcut icon" href="{% static 'img/icon/favicon.ico' %}" type="image/x-icon"/>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd6qrxPquGiu--hqVLV5WrVP3mrq4wxRY&amp;callback=initMap&amp;libraries=&amp;v=weekly" defer="defer"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/animate.js' %}"></script>
+    <script src="{% static 'js/map.js' %}"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&amp;family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+    <title>Skills</title>
+  </head>
+  <body>
+    <div class="wallpaper-1">
+      <div class="wallpaper_container"></div>
+    </div>
+    <div class="wallpaper-2">
+      <div class="wallpaper_container"></div>
+    </div>
+    <div class="wallpaper-3">
+      <div class="wallpaper_container"></div>
+    </div>
+    <div class="wallpaper-4">
+      <div class="wallpaper_container"></div>
+    </div>
+    <div class="main-page">
+      <div class="main-page_container">
+        <div class="container-small">
+          <header>
+            <div class="top-logo-container">
+              <div class="yellow-back_logo"></div>
+            </div>
+            <nav>
+              <ul>
+                <li> <a href="#">Наши работы</a></li>
+                <li> <a href="#">О нас</a></li>
+                <li> <a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </header>
+          <div class="main-title">
+            <h1>“Et aliquip nostrud commodo proident veniam enim”</h1>
+            <div class="main-title-social">Следите за нами!<img src="{% static 'img/icon/Line.png' %}" alt=""/><a href="">
+              <img src="{% static 'img/icon/telegram.png' %}" alt=""/></a><a href=""><img src="{% static 'img/icon/whatsup.png' %}" alt=""/></a><a href="">
+                <img src="{% static 'img/icon/instagram.png' %}" alt=""/></a><a href=""><img src="{% static 'img/icon/facebook.png' %}" alt=""/></a><a href="">
+                  <img src="{% static 'img/icon/vk.png' %}" alt=""/></a></div>
+          </div>
+          <div class="button_container"><a class="first-slide" onmouseenter="Hover(1)" onmouseleave="OutHover(1)" href="#">
+              <div class="1-round" style="border: 10px solid #FAB807"></div></a><a class="second-slide" onmouseenter="Hover(2)" onmouseleave="OutHover(2)" onclick="OtherButton(2)" href="#">
+              <div class="2-round"></div></a><a class="third-slide" onmouseenter="Hover(3)" onmouseleave="OutHover(3)" onclick="OtherButton(3)" href="#">
+              <div class="3-round"></div></a><a class="fourth-slide" onmouseenter="Hover(4)" onmouseleave="OutHover(4)" onclick="OtherButton(4)" href="#">
+              <div class="4-round"></div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="learn-more_block">
+      <div class="container-small">
+        <div class="learn-more_text">
+          <h1>Ex ipsum do eu culpa aliquip</h1>
+          <h2>Non sint veniam non officia cupidatat.</h2>
+          <p>Ex ipsum do eu culpa aliquip proident esse eiusmod. Adipisicing ullamco esse ad consectetur ullamco commodo ullamco elit cillum laborum eu magna. Tempor nulla eiusmod id do. Est ex proident ex ipsum fugiat non. Ullamco commodo ut quis sit sunt aliqua in exercitation ullamco laborum est sit. Magna cillum incididunt enim laborum amet consectetur quis ullamco in.</p><a class="learm-more_button" href="#">Узнать подробнее</a>
+        </div><img class="learn-more_img" src="{% static 'img/Bart.png' %}"/>
+      </div>
+    </div>
+    <div class="contact-us">
+      <div class="contact-us_container">
+        <div class="contact_text">
+          <h2>Non sint veniam</h2>
+          <p>Ex ipsum do eu culpa aliquip proident esse eiusmod. Adipisicing ullamco esse ad consectetur ullamco commodo ullamco elit cillum laborum eu magna. Tempor nulla eiusmod id do. Est ex proident ex ipsum fugiat non.</p>
+          <div class="contact-us-social"><a href=""><img src="{% static 'img/icon/telegram.png' %}" alt=""/></a><a href="">
+            <img src="{% static 'img/icon/whatsup.png' %}" alt=""/></a><a href=""><img src="{% static 'img/icon/instagram.png' %}" alt=""/></a><a href="">
+              <img src="{% static 'img/icon/facebook.png' %}" alt=""/></a><a href=""><img src="{% static 'img/icon/vk.png' %}" alt=""/></a></div>
+        </div>
+        <form class="contact_form">
+          <div class="up">
+            <input type="text" placeholder="Имя"/>
+            <input type="text" placeholder="Название компании*"/>
+          </div>
+          <div class="down">
+            <input type="text" placeholder="Телефон"/>
+            <input type="text" placeholder="Email*"/>
+          </div>
+          <div class="buttons"><a class="order_call" href="">Заказать звонок</a><a class="checkout" href="">Оформить заказ</a></div>
+        </form>
+      </div>
+    </div>
+    <div class="map-block">
+      <div class="container-small">
+        <div class="map-text">
+          <div class="find-us">
+            <h2>Где нас найти?</h2>
+            <p>Саратов, проспект Кирова, 32. Арка напротив ТЦ "Манеж".</p>
+          </div>
+          <div class="contact-us-map">
+            <h2>Как с нами связаться?</h2>
+            <p>По телефону: +7 (937) 225-55-71</p>
+            <p>Или в социальных сетях <img src="{% static 'img/icon/Line.png' %}" alt=""/><a href="">
+              <img src="{% static 'img/icon/telegram.png' %}" alt=""/></a><a href="">
+                <img src="{% static 'img/icon/whatsup.png' %}" alt=""/></a><a href="">
+                  <img src="{% static 'img/icon/instagram.png' %}" alt=""/></a><a href="">
+                    <img src="{% static 'img/icon/facebook.png' %}" alt=""/></a><a href=""><img src="{% static 'img/icon/vk.png' %}" alt=""/></a></p>
+          </div>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+  </body>
+</html>
