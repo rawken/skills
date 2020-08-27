@@ -6,6 +6,7 @@ let prev_trigger_name;
 let prev_trigger = 1;
 let prev_prev_trigger = 1;
 let a = 0;
+let timer = 7000;
 
 function FirstButton(){
   prev_prev_trigger = prev_trigger;
@@ -92,6 +93,15 @@ function OtherButton(number){
 
 }
 function Next(number){
+  clearTimeout(timerId);
+  timerId = setInterval(() => {
+    Hover(trigger);
+    if (trigger != 4) {
+      OtherButton(trigger + 1);
+    } else {
+      FirstButton();
+    }
+  }, timer);
   animate({
     duration: 2000,
     timing: quadEaseOut,
@@ -103,6 +113,15 @@ function Next(number){
 }
 
 function Prev(number){
+  clearTimeout(timerId);
+   timerId = setInterval(() => {
+    Hover(trigger);
+    if (trigger != 4) {
+      OtherButton(trigger + 1);
+    } else {
+      FirstButton();
+    }
+  }, timer);
   animate({
     duration: 2000,
     timing: quadEaseOut,
@@ -183,4 +202,4 @@ function OutHover(number){
   } else {
     FirstButton();
   }
-}, 7000);
+}, timer);

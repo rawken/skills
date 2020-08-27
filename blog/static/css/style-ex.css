@@ -1,0 +1,80 @@
+header {
+  position: relative;
+  width: 100%;
+}
+
+.black {
+  width: 100%;
+  height: 167px;
+  background: black;
+}
+
+.last-text {
+  margin-bottom: 72px;
+}
+
+.last-text .container-small {
+  text-align: justify;
+  line-height: 133.19%;
+  font-size: 18px;
+}
+
+.learn-more_block p {
+  line-height: 133.19%;
+}
+
+footer .container-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-media img {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.phone {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.045em;
+  margin-left: 290px;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  color: #FAB807;
+}
+
+.this {
+  color: #FAB807;
+  cursor: default;
+}
+
+.yellow-back_logo {
+  background: url(../img/skills_logow.svg);
+  background-size: cover;
+}

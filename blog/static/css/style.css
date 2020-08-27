@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -485,7 +485,7 @@ a:hover {
   background: #FAB807;
   z-index: 1;
   width: 62px;
-  height: 100%;
+  height: 62px;
 }
 
 header {
@@ -494,7 +494,7 @@ header {
   z-index: 3;
   left: 50%;
   width: 1300px;
-  top: 60px;
+  height: 167px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,4 +869,39 @@ p {
 #map {
   width: 614px;
   height: 500px;
+}
+
+footer {
+  height: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-supersmall {
+  width: 780px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-media {
+  width: 280px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.short {
+  margin-top: -44px;
 }
