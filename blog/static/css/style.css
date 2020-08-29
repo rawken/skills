@@ -905,3 +905,11 @@ footer {
 .short {
   margin-top: -44px;
 }
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex img{
+  margin-left: 15px;
+}
