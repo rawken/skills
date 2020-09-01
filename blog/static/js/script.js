@@ -25,10 +25,10 @@ function FirstButton(){
   trigger = 1;
 
   if (prev_prev_trigger != prev_trigger && prev_prev_trigger != trigger && prev_trigger != trigger)
-  document.getElementsByClassName("wallpaper-" + (10 - (prev_trigger + prev_prev_trigger + trigger)))[0].style.zIndex = -1;
-  document.getElementsByClassName("wallpaper-" + prev_prev_trigger)[0].style.zIndex = 0;
-  document.getElementsByClassName("wallpaper-" + prev_trigger)[0].style.zIndex = 1;
-  document.getElementsByClassName("wallpaper-1")[0].style.zIndex = 2;
+  document.getElementsByClassName("wallpaper")[(9 - (prev_trigger + prev_prev_trigger + trigger))].style.zIndex = -1;
+  document.getElementsByClassName("wallpaper")[prev_prev_trigger - 1].style.zIndex = 0;
+  document.getElementsByClassName("wallpaper")[prev_trigger - 1].style.zIndex = 1;
+  document.getElementsByClassName("wallpaper")[0].style.zIndex = 2;
 
 
   Prev(trigger);
@@ -52,11 +52,11 @@ function OtherButton(number){
   Translate();
   
   if (prev_prev_trigger != prev_trigger && prev_prev_trigger != number && prev_trigger != number){
-  document.getElementsByClassName("wallpaper-" + (10 - (prev_trigger + prev_prev_trigger + number)))[0].style.zIndex = -1;
+  document.getElementsByClassName("wallpaper")[(9 - (prev_trigger + prev_prev_trigger + number))].style.zIndex = -1;
   }
-  document.getElementsByClassName("wallpaper-" + prev_prev_trigger)[0].style.zIndex = 0;
-  document.getElementsByClassName("wallpaper-" + prev_trigger)[0].style.zIndex = 1;
-  document.getElementsByClassName("wallpaper-" + number)[0].style.zIndex = 2;
+  document.getElementsByClassName("wallpaper")[prev_prev_trigger - 1].style.zIndex = 0;
+  document.getElementsByClassName("wallpaper")[prev_trigger - 1].style.zIndex = 1;
+  document.getElementsByClassName("wallpaper")[number - 1].style.zIndex = 2;
   
   
   animate({
@@ -106,7 +106,7 @@ function Next(number){
     duration: 2000,
     timing: quadEaseOut,
     draw: function(progress) {
-      document.getElementsByClassName("wallpaper-" + number)[0].style.left = document.documentElement.clientWidth + -progress * document.documentElement.clientWidth + "px";
+      document.getElementsByClassName("wallpaper")[number - 1].style.left = document.documentElement.clientWidth + -progress * document.documentElement.clientWidth + "px";
     }
   });
   setTimeout(Change, 2000);
@@ -126,7 +126,7 @@ function Prev(number){
     duration: 2000,
     timing: quadEaseOut,
     draw: function(progress) {
-      document.getElementsByClassName("wallpaper-" + number)[0].style.left = -document.documentElement.clientWidth + progress * document.documentElement.clientWidth + "px";
+      document.getElementsByClassName("wallpaper")[number - 1].style.left = -document.documentElement.clientWidth + progress * document.documentElement.clientWidth + "px";
     }
   });
   setTimeout(Change, 2000);

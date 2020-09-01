@@ -422,12 +422,13 @@ a:hover {
   padding: 0.1px;
 }
 
-.wallpaper-1 {
+.wallpaper {
   position: absolute;
   height: 100vh;
   width: 100%;
   left: 0%;
-  background: url(../img/main-page-1.webp) center center/cover;
+  background-position: center;
+  background-size: cover;
   z-index: 1;
 }
 
